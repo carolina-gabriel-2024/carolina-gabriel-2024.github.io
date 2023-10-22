@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { DarkModeButton } from './ui/DarkModeButton';
+import { Button } from './ui/Button';
 import { GitHubIconLink } from './ui/GitHubIconLink';
 import { globalCss, styled } from './stitches.config';
 import { Home } from './components/Home';
@@ -46,7 +46,7 @@ export const App: React.VFC = () => {
       <HeaderContainer>
         <H1>Single Page Apps for GitHub Pages</H1>
         <HeaderIconContainer>
-          <DarkModeButton />
+          <Button />
           <GitHubIconLink
             href="https://github.com/rafgraph/spa-github-pages"
             title="GitHub repository for SPA GitHub Pages"

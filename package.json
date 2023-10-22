@@ -1,17 +1,19 @@
 {
-  "name": "spa-github-pages",
-  "version": "6.1.0",
+  "name": "carolina-gabriel-2024",
+  "version": "0.1.0",
   "private": true,
-  "description": "Single Page Apps for GitHub Pages",
+  "description": "Wedding home page: Carolina Gabriel 2024",
   "scripts": {
     "start": "webpack-dev-server --host 0.0.0.0 --disable-host-check --open",
     "build": "webpack -p"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rafgraph/spa-github-pages.git"
+    "url": "git+https://github.com/carolina-gabriel-2024/carolina-gabriel-2024.github.io.git"
   },
-  "author": "Rafael Pedicini <rafael@rafgraph.dev>",
+  "author": "Gabriel Andersson <>",
+  "adapting-author": "Gabriel Andersson <>",
+  "base-author": "Rafael Pedicini <rafael@rafgraph.dev>",
   "license": "MIT",
   "dependencies": {
     "@radix-ui/react-icons": "^1.0.3",
@@ -20,8 +22,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-interactive": "^1.1.0",
-    "react-router-dom": "^5.2.0",
-    "use-dark-mode": "^2.3.1"
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@types/react": "^17.0.4",
