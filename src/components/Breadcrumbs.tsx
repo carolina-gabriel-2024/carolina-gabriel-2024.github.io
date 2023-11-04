@@ -9,6 +9,9 @@ interface breadCrumbTitlesInterface {
 const breadCrumbTitles: breadCrumbTitlesInterface = {
   '': 'Home',
   example: 'Example',
+  where: 'Var?',
+  when: 'När?',
+  how: 'Hur?',
   'two-deep': 'Two Deep',
   'sitemap-link-generator': 'Sitemap Link Generator',
 };

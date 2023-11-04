@@ -6,6 +6,7 @@ import { globalCss, styled } from './stitches.config';
 import { Home } from './components/Home';
 import { ExampleComponent } from './components/ExampleComponent';
 import { ExampleTwoDeepComponent } from './components/ExampleTwoDeepComponent';
+import { WhereComponent } from './components/WhereComponent';
 import { SitemapLinkGenerator } from './components/SitemapLinkGenerator';
 import { PageNotFound } from './components/PageNotFound';
 import { Breadcrumbs } from './components/Breadcrumbs';
@@ -44,14 +45,7 @@ export const App: React.VFC = () => {
   return (
     <AppContainer>
       <HeaderContainer>
-        <H1>Single Page Apps for GitHub Pages</H1>
-        <HeaderIconContainer>
-          <Button />
-          <GitHubIconLink
-            href="https://github.com/rafgraph/spa-github-pages"
-            title="GitHub repository for SPA GitHub Pages"
-          />
-        </HeaderIconContainer>
+        <H1>Carolina & Gabriel 2024</H1>
       </HeaderContainer>
 
       <BreadcrumbsNav>
@@ -60,6 +54,9 @@ export const App: React.VFC = () => {
 
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/when" component={Home} />
+        <Route exact path="/where" component={WhereComponent} />
+        <Route exact path="/how" component={Home} />
         <Route exact path="/example" component={ExampleComponent} />
         <Route
           exact
