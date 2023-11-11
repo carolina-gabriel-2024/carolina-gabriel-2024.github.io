@@ -8,12 +8,14 @@ interface breadCrumbTitlesInterface {
 
 const breadCrumbTitles: breadCrumbTitlesInterface = {
   '': 'Home',
-  example: 'Example',
-  where: 'Var?',
-  when: 'När?',
-  how: 'Hur?',
-  'two-deep': 'Two Deep',
-  'sitemap-link-generator': 'Sitemap Link Generator',
+  info: 'Info',
+  vigsel: 'Vigsel',
+  anmalan: 'Anmälan',
+  osa: 'OSA',
+  talare: 'Tal & Spex',
+  plats: 'Plats',
+  kladsel: 'Klädsel',
+  boende: 'Boende',
 };
 
 const BreadcrumbsItem: React.VFC<RouteComponentProps> = ({ match }) => {

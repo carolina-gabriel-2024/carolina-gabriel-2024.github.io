@@ -5,6 +5,13 @@ import { GitHubIconLink } from './ui/GitHubIconLink';
 import { globalCss, styled } from './stitches.config';
 import { Home } from './components/Home';
 import { ExampleComponent } from './components/ExampleComponent';
+import { Info } from './components/Info';
+import { Osa } from './components/Osa';
+import { Boende } from './components/info/Boende';
+import { Clothing } from './components/info/Clothing';
+import { Plats } from './components/info/Plats';
+import { Talare } from './components/Talare';
+import { Vigsel } from './components/Vigsel';
 import { ExampleTwoDeepComponent } from './components/ExampleTwoDeepComponent';
 import { WhereComponent } from './components/WhereComponent';
 import { SitemapLinkGenerator } from './components/SitemapLinkGenerator';
@@ -54,10 +61,13 @@ export const App: React.VFC = () => {
 
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/when" component={Home} />
-        <Route exact path="/where" component={WhereComponent} />
-        <Route exact path="/how" component={Home} />
-        <Route exact path="/example" component={ExampleComponent} />
+        <Route exact path="/vigsel" component={Vigsel} />
+        <Route exact path="/osa" component={Osa} />
+        <Route exact path="/talare" component={Talare} />
+        <Route exact path="/info" component={Info} />
+        <Route exact path="/info/plats" component={Plats} />
+        <Route exact path="/info/kladsel" component={Clothing} />
+        <Route exact path="/info/boende" component={Boende} />
         <Route
           exact
           path="/example/two-deep"
