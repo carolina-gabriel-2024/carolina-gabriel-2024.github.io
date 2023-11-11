@@ -29,6 +29,11 @@ const H2 = styled('h2', {
   marginRight: '12px',
 });
 
+const Img = styled('img', {
+  maxWidth: '500px',
+  width: 'auto',
+});
+
 export const Home: React.VFC = () => (
   <div>
     <P>
@@ -52,5 +57,6 @@ export const Home: React.VFC = () => (
       prat prat prat, mer info behövs. lorem ipsum osåvidare Läs mer under{' '}
       <InfoLink />.
     </P>
+    <Img src="/norway_kiss.jpg" />
   </div>
 );
