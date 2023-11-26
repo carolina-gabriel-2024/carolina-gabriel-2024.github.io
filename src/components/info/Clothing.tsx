@@ -1,9 +1,10 @@
 import * as React from 'react';
-import { P } from '../../ui/Paragraph';
+import { P, H2 } from '../../ui/Paragraph';
 import { styled } from '../../stitches.config';
 
 export const Clothing: React.VFC = () => (
   <div>
-    <P>Info: Klädsel!</P>
+    <H2>Info: Klädsel!</H2>
+    <P>Text om klädsel</P>
   </div>
 );

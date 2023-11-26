@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { InteractiveLink } from '../ui/InteractiveLink';
-import { P } from '../ui/Paragraph';
+import { P, H2 } from '../ui/Paragraph';
 import { styled } from '../stitches.config';
 
 const LinkContainer = styled('span', {
@@ -16,7 +16,7 @@ const RepoReadmeLink: React.VFC = () => (
 
 export const Talare: React.VFC = () => (
   <div>
-    <P>Talare!</P>
-    Kontakt-uppgifter till Toastmasters
+    <H2>Talare!</H2>
+    <P>Kontakt-uppgifter till Toastmasters</P>
   </div>
 );

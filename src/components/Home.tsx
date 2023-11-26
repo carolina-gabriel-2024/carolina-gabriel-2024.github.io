@@ -1,7 +1,9 @@
 import * as React from 'react';
 import { InteractiveLink } from '../ui/InteractiveLink';
-import { P } from '../ui/Paragraph';
+import { P, H2 } from '../ui/Paragraph';
 import { styled } from '../stitches.config';
+import { BoxCss } from '../ui/style/BoxCss';
+import { Img, ImgText, ImgCard } from '../ui/Image';
 
 const LinkContainer = styled('span', {
   display: 'block',
@@ -24,21 +26,9 @@ const TalLink: React.VFC = () => (
   <InteractiveLink href="/talare">Tal & Spex</InteractiveLink>
 );
 
-const H2 = styled('h2', {
-  fontSize: '22px',
-  marginRight: '12px',
-});
-
-const Img = styled('img', {
-  maxWidth: '500px',
-  width: 'auto',
-});
-
 export const Home: React.VFC = () => (
   <div>
-    <P>
-      <H2>Vi ska gifta oss!</H2>
-    </P>
+    <H2>Vi ska gifta oss!</H2>
 
     <P>
       På lördagen 2024-05-25 kommer vi att ha bröllopsfirande i Årås Kvarn. Vi
@@ -57,6 +47,9 @@ export const Home: React.VFC = () => (
       prat prat prat, mer info behövs. lorem ipsum osåvidare Läs mer under{' '}
       <InfoLink />.
     </P>
-    <Img src="/norway_kiss.jpg" />
+    <ImgCard>
+      <Img src="/norway_kiss.jpg" />
+      <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
+    </ImgCard>
   </div>
 );

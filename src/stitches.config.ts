@@ -58,6 +58,8 @@ export const globalCss = createGlobalCss({
     padding: 0,
     boxSizing: 'inherit',
     font: 'inherit',
+    fontFamily:
+      '"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif',
     fontWeight: 'inherit',
     textAlign: 'inherit',
     lineHeight: 'inherit',
@@ -72,6 +74,7 @@ export const globalCss = createGlobalCss({
     color: '$highContrast',
     fontFamily: 'system-ui, Helvetica Neue, sans-serif',
     // use word-break instead of "overflow-wrap: anywhere" because of Safari support
+    overflowY: 'hidden',
     wordBreak: 'break-word',
     WebkitFontSmoothing: 'antialiased',
     MozOsxFontSmoothing: 'grayscale',

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { InteractiveLink } from '../ui/InteractiveLink';
-import { P } from '../ui/Paragraph';
+import { P, H2 } from '../ui/Paragraph';
 import { styled } from '../stitches.config';
 
 const LinkContainer = styled('span', {
@@ -16,7 +16,7 @@ const RepoReadmeLink: React.VFC = () => (
 
 export const Vigsel: React.VFC = () => (
   <div>
-    <P>Vigsel!</P>
+    <H2>Vigsel!</H2>
     <P>
       Vi kommer att försöka hålla vigselceremonin i ett grönområde i närheten av
       festlokalen. Vigseln planeras att hållas XX:XX, så en samlingstid YY:YY

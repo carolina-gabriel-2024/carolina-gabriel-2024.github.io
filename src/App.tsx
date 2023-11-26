@@ -16,7 +16,7 @@ import { SitemapLinkGenerator } from './components/SitemapLinkGenerator';
 import { PageNotFound } from './components/PageNotFound';
 import { Breadcrumbs } from './components/Breadcrumbs';
 import { RouterLink } from './ui/RouterLink';
-
+import { BoxCss } from './ui/style/BoxCss';
 const AppContainer = styled('div', {
   maxWidth: '540px',
   padding: '12px 15px 25px',
@@ -27,11 +27,14 @@ const HeaderContainer = styled('header', {
   display: 'flex',
   justifyContent: 'space-between',
   marginBottom: '18px',
+  ...BoxCss,
+  paddingBottom: '0px',
 });
 
 const H1 = styled('h1', {
-  fontSize: '26px',
+  fontSize: '42px',
   marginRight: '16px',
+  fontFamily: 'Papyrus, monospace',
 });
 
 const HeaderIconContainer = styled('span', {
@@ -43,10 +46,23 @@ const HeaderIconContainer = styled('span', {
 
 const BreadcrumbsNav = styled('nav', {
   margin: '18px 0',
+  ...BoxCss,
 });
 
 const MainPage = styled('div', {
-  minHeight: '800px',
+  minHeight: '500px',
+  maxHeight: '800px',
+  overflowY: 'auto',
+  ...BoxCss,
+});
+
+const Tiny = styled('span', {
+  fontSize: '20px',
+});
+
+const FooterCard = styled('div', {
+  margin: '18px 0px 0px 0px',
+  ...BoxCss,
 });
 
 const Footer: React.VFC = () => (
@@ -89,7 +105,9 @@ export const App: React.VFC = () => {
   return (
     <AppContainer>
       <HeaderContainer>
-        <H1>Carolina & Gabriel 2024</H1>
+        <H1>
+          Gabriel <Tiny>och</Tiny> Carolina 2024
+        </H1>
       </HeaderContainer>
 
       <BreadcrumbsNav>
@@ -118,7 +136,9 @@ export const App: React.VFC = () => {
           <Route component={PageNotFound} />
         </Switch>
       </MainPage>
-      <Footer />
+      <FooterCard>
+        <Footer />
+      </FooterCard>
     </AppContainer>
   );
 };
