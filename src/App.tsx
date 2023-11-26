@@ -17,8 +17,10 @@ import { PageNotFound } from './components/PageNotFound';
 import { Breadcrumbs } from './components/Breadcrumbs';
 import { RouterLink } from './ui/RouterLink';
 import { BoxCss } from './ui/style/BoxCss';
+import { Img, ImgText, SideImgCard, SideImg } from './ui/Image';
+
 const AppContainer = styled('div', {
-  maxWidth: '540px',
+  maxWidth: '1000px',
   padding: '12px 15px 25px',
   margin: '0 auto',
 });
@@ -48,8 +50,23 @@ const BreadcrumbsNav = styled('nav', {
   margin: '18px 0',
   ...BoxCss,
 });
+const MainContainer = styled('div', {
+  display: 'flex',
+});
+const ImageBox = styled('div', {});
+
+const ImageContainer = styled('div', {
+  flex: 1,
+  display: 'flex',
+  flexDirection: 'column',
+  overflowY: 'scroll',
+  maxHeight: '800px',
+  minHeight: '100%',
+});
 
 const MainPage = styled('div', {
+  flex: 2,
+  maxWidth: '800px',
   minHeight: '500px',
   maxHeight: '800px',
   overflowY: 'auto',
@@ -113,29 +130,57 @@ export const App: React.VFC = () => {
       <BreadcrumbsNav>
         <Breadcrumbs />
       </BreadcrumbsNav>
-      <MainPage>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/vigsel" component={Vigsel} />
-          <Route exact path="/osa" component={Osa} />
-          <Route exact path="/talare" component={Talare} />
-          <Route exact path="/info" component={Info} />
-          <Route exact path="/info/plats" component={Plats} />
-          <Route exact path="/info/kladsel" component={Clothing} />
-          <Route exact path="/info/boende" component={Boende} />
-          <Route
-            exact
-            path="/example/two-deep"
-            component={ExampleTwoDeepComponent}
-          />
-          <Route
-            exact
-            path="/sitemap-link-generator"
-            component={SitemapLinkGenerator}
-          />
-          <Route component={PageNotFound} />
-        </Switch>
-      </MainPage>
+      <MainContainer>
+        <MainPage>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/vigsel" component={Vigsel} />
+            <Route exact path="/osa" component={Osa} />
+            <Route exact path="/talare" component={Talare} />
+            <Route exact path="/info" component={Info} />
+            <Route exact path="/info/plats" component={Plats} />
+            <Route exact path="/info/kladsel" component={Clothing} />
+            <Route exact path="/info/boende" component={Boende} />
+            <Route
+              exact
+              path="/example/two-deep"
+              component={ExampleTwoDeepComponent}
+            />
+            <Route
+              exact
+              path="/sitemap-link-generator"
+              component={SitemapLinkGenerator}
+            />
+            <Route component={PageNotFound} />
+          </Switch>
+        </MainPage>
+        <ImageContainer>
+          <SideImgCard>
+            <SideImg src="/norway_kiss.jpg" />
+            <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
+          </SideImgCard>
+          <SideImgCard>
+            <SideImg src="/norway_kiss.jpg" />
+            <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
+          </SideImgCard>
+          <SideImgCard>
+            <SideImg src="/norway_kiss.jpg" />
+            <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
+          </SideImgCard>
+          <SideImgCard>
+            <SideImg src="/norway_kiss.jpg" />
+            <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
+          </SideImgCard>
+          <SideImgCard>
+            <SideImg src="/norway_kiss.jpg" />
+            <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
+          </SideImgCard>
+          <SideImgCard>
+            <SideImg src="/norway_kiss.jpg" />
+            <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
+          </SideImgCard>
+        </ImageContainer>
+      </MainContainer>
       <FooterCard>
         <Footer />
       </FooterCard>
