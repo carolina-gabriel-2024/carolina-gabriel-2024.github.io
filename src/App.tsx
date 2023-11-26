@@ -90,7 +90,6 @@ export const App: React.VFC = () => {
     <AppContainer>
       <HeaderContainer>
         <H1>Carolina & Gabriel 2024</H1>
-        <RouterLink to="/vigsel">Vigsel</RouterLink>
       </HeaderContainer>
 
       <BreadcrumbsNav>
