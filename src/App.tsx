@@ -17,7 +17,14 @@ import { PageNotFound } from './components/PageNotFound';
 import { Breadcrumbs } from './components/Breadcrumbs';
 import { RouterLink } from './ui/RouterLink';
 import { BoxCss } from './ui/style/BoxCss';
-import { Img, ImgText, SideImgCard, ImgCard, SideImg } from './ui/Image';
+import {
+  Img,
+  ImgText,
+  SideImgCard,
+  ImgCard,
+  SideImg,
+  ShuffledImageList,
+} from './ui/Image';
 import { Shortcuts } from './ui/Shortcuts';
 import { renderAsDesktop } from './ui/style/Mobile';
 
@@ -25,7 +32,7 @@ const opacityLevel = 0.93;
 const transparentBg = `rgba(255,255,255, ${opacityLevel})`;
 
 let viewPortHeight =
-  (window.visualViewport.height - (75 + 39.5 + 25)).toString() + 'px';
+  (window.visualViewport.height - (75 + 39.5 + 75)).toString() + 'px';
 let viewPortWidth =
   (window.visualViewport.width * (renderAsDesktop ? 0.8 : 1)).toString() + 'px';
 
@@ -77,7 +84,8 @@ const BreadcrumbsNav = styled('nav', {
 
 const MainContainer = styled('div', {
   display: 'flex',
-  maxHeight: '100%',
+  paddingBottom: '10px',
+  height: viewPortHeight,
 });
 const ImageBox = styled('div', {});
 
@@ -85,18 +93,14 @@ const ImageContainer = styled('div', {
   flex: 1,
   display: 'flex',
   flexDirection: 'column',
-  overflowY: 'scroll',
+  overflowY: 'auto',
   ...BoxCss,
-  minHeight: '100%',
   marginLeft: '18px',
-  paddingBottom: '0px',
   backgroundColor: transparentBg,
 });
 
 const MainPage = styled('div', {
   flex: 2,
-  minHeight: '100%',
-  maxHeight: 'inherit',
   overflowY: 'auto',
   ...BoxCss,
   backgroundColor: transparentBg,
@@ -147,35 +151,19 @@ const Footer: React.VFC = () => (
   </div>
 );
 
-const SideImages: React.VFC = () => (
-  <ImageContainer>
-    <SideImgCard>
-      <SideImg src="/norway_kiss.jpg" />
-      <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
-    </SideImgCard>
-    <SideImgCard>
-      <SideImg src="/norway_kiss.jpg" />
-      <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
-    </SideImgCard>
-    <SideImgCard>
-      <SideImg src="/norway_kiss.jpg" />
-      <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
-    </SideImgCard>
-    <SideImgCard>
-      <SideImg src="/norway_kiss.jpg" />
-      <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
-    </SideImgCard>
-    <SideImgCard>
-      <SideImg src="/norway_kiss.jpg" />
-
-      <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
-    </SideImgCard>
-    <SideImgCard>
-      <SideImg src="/norway_kiss.jpg" />
-      <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
-    </SideImgCard>
-  </ImageContainer>
-);
+const SideImages: React.VFC = () => {
+  let images = ShuffledImageList.slice(0, 3);
+  return (
+    <ImageContainer>
+      {images.map((o) => (
+        <SideImgCard>
+          <SideImg src={o.key} />
+          <ImgText>{o.text}</ImgText>
+        </SideImgCard>
+      ))}
+    </ImageContainer>
+  );
+};
 
 export const App: React.VFC = () => {
   globalCss();

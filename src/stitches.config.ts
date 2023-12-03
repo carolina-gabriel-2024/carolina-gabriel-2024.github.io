@@ -1,5 +1,7 @@
 import { createCss, StitchesCss } from '@stitches/react';
 
+import { renderAsMobile } from './ui/style/Mobile';
+
 export const stitchesConfig = createCss({
   theme: {
     colors: {
@@ -46,7 +48,12 @@ export const darkThemeClass = theme({
     purple: 'hsl(270,85%,60%)',
   },
 });
-
+let viewPortHeight =
+  (window.visualViewport.height - (75 + 39.5 + 25 + 100)).toString() + 'px';
+const oy = renderAsMobile ? 'auto' : 'hidden';
+let h = renderAsMobile
+  ? 'inherit'
+  : (window.visualViewport.height - (100 + 75 + 39.5 + 25)).toString() + 'px';
 export const globalCss = createGlobalCss({
   // unset all styles on interactive elements
   'button, input, select, textarea, a, area': {
@@ -91,7 +98,7 @@ export const globalCss = createGlobalCss({
     height: '100%',
   },
   '#root': {
-    minHeight: '100%',
+    height: '100%',
     backgroundImage: 'url("/webbackground.png")',
     backgroundRepeat: 'round round',
   },

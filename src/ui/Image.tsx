@@ -1,6 +1,27 @@
 import { styled } from '../stitches.config';
 import { BoxCss } from './style/BoxCss';
 
+export const ShuffledImageList = [
+  {
+    key: '/norway_kiss.jpg',
+    text: 'Från Frieriet Utanför Tromsö i Norge, 2023-10-31',
+  },
+  {
+    key: '/norway_kiss.jpg',
+    text: 'Frieriet Utanför Tromsö i Norge, 2023-10-31',
+  },
+  { key: '/norway_kiss.jpg', text: 'Utanför Tromsö i Norge, 2023-10-31' },
+  { key: '/norway_kiss.jpg', text: 'Tromsö i Norge, 2023-10-31' },
+  { key: '/norway_kiss.jpg', text: 'i Norge, 2023-10-31' },
+  { key: '/norway_kiss.jpg', text: 'Norge, 2023-10-31' },
+  { key: '/norway_kiss.jpg', text: '2023-10-31' },
+  { key: '/norway_kiss.jpg', text: '10-31' },
+  { key: '/norway_kiss.jpg', text: '31' },
+]
+  .map((value) => ({ value, sort: Math.random() }))
+  .sort((a, b) => a.sort - b.sort)
+  .map(({ value }) => value);
+
 export const ImgCard = styled('div', {
   ...BoxCss,
   paddingBottom: '0px',

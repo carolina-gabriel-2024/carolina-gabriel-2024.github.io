@@ -3,7 +3,7 @@ import { InteractiveLink } from '../ui/InteractiveLink';
 import { P, H2 } from '../ui/Paragraph';
 import { styled } from '../stitches.config';
 import { BoxCss } from '../ui/style/BoxCss';
-import { Img, ImgText, ImgCard } from '../ui/Image';
+import { Img, ImgText, ImgCard, ShuffledImageList } from '../ui/Image';
 import { renderAsMobile } from '../ui/style/Mobile';
 
 const LinkContainer = styled('span', {
@@ -27,12 +27,15 @@ const TalLink: React.VFC = () => (
   <InteractiveLink href="/talare">Tal & Spex</InteractiveLink>
 );
 
-const ImageBox: React.VFC = () => (
-  <ImgCard>
-    <Img src="/norway_kiss.jpg" />
-    <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
-  </ImgCard>
-);
+const ImageBox: React.VFC = () => {
+  let i = ShuffledImageList[0];
+  return (
+    <ImgCard>
+      <Img src={i.key} />
+      <ImgText>{i.text}</ImgText>
+    </ImgCard>
+  );
+};
 
 export const Home: React.VFC = () => {
   return (
