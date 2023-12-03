@@ -103,6 +103,7 @@ const MainPage = styled('div', {
 });
 
 const Tiny = styled('span', {
+  fontFamily: 'Papyrus, monospace',
   fontSize: '20px',
 });
 

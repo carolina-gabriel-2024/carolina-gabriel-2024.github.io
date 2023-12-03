@@ -25,14 +25,15 @@ const LinkUnion = React.forwardRef<HTMLAnchorElement, LinkUnionProps>(
 );
 
 export const InteractiveLink = styled(LinkUnion, {
-  color: '$highContrast',
+  color: '$darkGreen',
 
   // can't use shorthand for textDecoration because of bug in Safari v14
   // textDecoration: 'underline $colors$green dotted from-font',
   textDecorationLine: 'underline',
   textDecorationStyle: 'dotted',
-  textDecorationColor: '$green',
+  textDecorationColor: '$darkGreen',
   textDecorationThickness: 'from-font',
+  fontFamily: 'Papyrus, monospace',
 
   // padding used to provide offset for boxShadow used in focus styles
   // margin undoes padding for page layout so boxShadow works like outline
@@ -45,6 +46,7 @@ export const InteractiveLink = styled(LinkUnion, {
 
   '&.hover, &.mouseActive': {
     textDecorationColor: '$green',
+    color: '$green',
     textDecorationStyle: 'solid',
   },
   '&.touchActive, &.keyActive': {

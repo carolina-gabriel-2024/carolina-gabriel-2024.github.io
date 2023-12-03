@@ -12,6 +12,7 @@ export const stitchesConfig = createCss({
       orange: 'hsl(30,100%,50%)',
       yellow: 'hsl(51,100%,40%)',
       green: 'hsl(120,100%,33%)', // same as rgb(0,168,0)
+      darkGreen: 'hsl(100,100%,10%)', // same as rgb(0,168,0)
       blue: 'hsl(240,100%,50%)',
       purple: 'hsl(270,100%,60%)',
     },
