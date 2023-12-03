@@ -91,6 +91,7 @@ export const globalCss = createGlobalCss({
   },
   '#root': {
     minHeight: '100%',
-    backgroundColor: '$pageBackground',
+    backgroundImage: 'url("/webbackground.png")',
+    backgroundRepeat: 'round round',
   },
 });

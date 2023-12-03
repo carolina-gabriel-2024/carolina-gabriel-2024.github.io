@@ -1,13 +1,13 @@
 {
-    "name": "spa-github-pages",
+    "name": "Gabriel och Carolina 2024",
     "icons": [
         {
-            "src": "/favicon/green-grid-144-168-192-512x512.png",
+            "src": "/favicon/kotte-vanlig.svg",
             "sizes": "512x512",
-            "type": "image/png"
+            "type": "image/svg"
         }
     ],
     "theme_color": "#000000",
-    "background_color": "#007800",
+    "background_color": "#aa6e87",
     "display": "browser"
 }

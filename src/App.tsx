@@ -17,12 +17,23 @@ import { PageNotFound } from './components/PageNotFound';
 import { Breadcrumbs } from './components/Breadcrumbs';
 import { RouterLink } from './ui/RouterLink';
 import { BoxCss } from './ui/style/BoxCss';
-import { Img, ImgText, SideImgCard, SideImg } from './ui/Image';
+import { Img, ImgText, SideImgCard, ImgCard, SideImg } from './ui/Image';
+import { Shortcuts } from './ui/Shortcuts';
+import { renderAsDesktop } from './ui/style/Mobile';
+
+const opacityLevel = 0.93;
+const transparentBg = `rgba(255,255,255, ${opacityLevel})`;
+
+let viewPortHeight =
+  (window.visualViewport.height - (75 + 39.5 + 25)).toString() + 'px';
+let viewPortWidth =
+  (window.visualViewport.width * (renderAsDesktop ? 0.8 : 1)).toString() + 'px';
 
 const AppContainer = styled('div', {
-  maxWidth: '1000px',
-  padding: '12px 15px 25px',
+  maxWidth: viewPortWidth,
+  height: viewPortHeight,
   margin: '0 auto',
+  padding: '12px 15px 25px',
 });
 
 const HeaderContainer = styled('header', {
@@ -30,6 +41,7 @@ const HeaderContainer = styled('header', {
   justifyContent: 'space-between',
   marginBottom: '18px',
   ...BoxCss,
+  backgroundColor: transparentBg,
   paddingBottom: '0px',
 });
 
@@ -39,19 +51,33 @@ const H1 = styled('h1', {
   fontFamily: 'Papyrus, monospace',
 });
 
-const HeaderIconContainer = styled('span', {
-  width: '78px',
-  display: 'inline-flex',
-  justifyContent: 'space-between',
-  gap: '12px',
-});
+const HeaderIconContainer = renderAsDesktop
+  ? styled('span', {
+      maxWidth: '20px',
+      minWidth: '20px',
+      display: 'inline-flex',
+      justifyContent: 'space-between',
+      gap: '12px',
+    })
+  : styled('span', {
+      maxWidth: '200px',
+      minWidth: '200px',
+      display: 'inline-flex',
+      justifyContent: 'space-between',
+      gap: '12px',
+    });
 
 const BreadcrumbsNav = styled('nav', {
   margin: '18px 0',
   ...BoxCss,
+  backgroundColor: transparentBg,
+  display: 'flex',
+  justifyContent: 'space-between',
 });
+
 const MainContainer = styled('div', {
   display: 'flex',
+  maxHeight: '100%',
 });
 const ImageBox = styled('div', {});
 
@@ -60,17 +86,20 @@ const ImageContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   overflowY: 'scroll',
-  maxHeight: '800px',
+  ...BoxCss,
   minHeight: '100%',
+  marginLeft: '18px',
+  paddingBottom: '0px',
+  backgroundColor: transparentBg,
 });
 
 const MainPage = styled('div', {
   flex: 2,
-  maxWidth: '800px',
-  minHeight: '500px',
-  maxHeight: '800px',
+  minHeight: '100%',
+  maxHeight: 'inherit',
   overflowY: 'auto',
   ...BoxCss,
+  backgroundColor: transparentBg,
 });
 
 const Tiny = styled('span', {
@@ -80,6 +109,7 @@ const Tiny = styled('span', {
 const FooterCard = styled('div', {
   margin: '18px 0px 0px 0px',
   ...BoxCss,
+  backgroundColor: transparentBg,
 });
 
 const Footer: React.VFC = () => (
@@ -116,6 +146,36 @@ const Footer: React.VFC = () => (
   </div>
 );
 
+const SideImages: React.VFC = () => (
+  <ImageContainer>
+    <SideImgCard>
+      <SideImg src="/norway_kiss.jpg" />
+      <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
+    </SideImgCard>
+    <SideImgCard>
+      <SideImg src="/norway_kiss.jpg" />
+      <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
+    </SideImgCard>
+    <SideImgCard>
+      <SideImg src="/norway_kiss.jpg" />
+      <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
+    </SideImgCard>
+    <SideImgCard>
+      <SideImg src="/norway_kiss.jpg" />
+      <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
+    </SideImgCard>
+    <SideImgCard>
+      <SideImg src="/norway_kiss.jpg" />
+
+      <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
+    </SideImgCard>
+    <SideImgCard>
+      <SideImg src="/norway_kiss.jpg" />
+      <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
+    </SideImgCard>
+  </ImageContainer>
+);
+
 export const App: React.VFC = () => {
   globalCss();
 
@@ -129,6 +189,7 @@ export const App: React.VFC = () => {
 
       <BreadcrumbsNav>
         <Breadcrumbs />
+        <Shortcuts />
       </BreadcrumbsNav>
       <MainContainer>
         <MainPage>
@@ -154,36 +215,8 @@ export const App: React.VFC = () => {
             <Route component={PageNotFound} />
           </Switch>
         </MainPage>
-        <ImageContainer>
-          <SideImgCard>
-            <SideImg src="/norway_kiss.jpg" />
-            <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
-          </SideImgCard>
-          <SideImgCard>
-            <SideImg src="/norway_kiss.jpg" />
-            <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
-          </SideImgCard>
-          <SideImgCard>
-            <SideImg src="/norway_kiss.jpg" />
-            <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
-          </SideImgCard>
-          <SideImgCard>
-            <SideImg src="/norway_kiss.jpg" />
-            <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
-          </SideImgCard>
-          <SideImgCard>
-            <SideImg src="/norway_kiss.jpg" />
-            <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
-          </SideImgCard>
-          <SideImgCard>
-            <SideImg src="/norway_kiss.jpg" />
-            <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
-          </SideImgCard>
-        </ImageContainer>
+        {renderAsDesktop ? <SideImages /> : ''}
       </MainContainer>
-      <FooterCard>
-        <Footer />
-      </FooterCard>
     </AppContainer>
   );
 };

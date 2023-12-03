@@ -4,6 +4,7 @@ import { P, H2 } from '../ui/Paragraph';
 import { styled } from '../stitches.config';
 import { BoxCss } from '../ui/style/BoxCss';
 import { Img, ImgText, ImgCard } from '../ui/Image';
+import { renderAsMobile } from '../ui/style/Mobile';
 
 const LinkContainer = styled('span', {
   display: 'block',
@@ -26,30 +27,37 @@ const TalLink: React.VFC = () => (
   <InteractiveLink href="/talare">Tal & Spex</InteractiveLink>
 );
 
-export const Home: React.VFC = () => (
-  <div>
-    <H2>Vi ska gifta oss!</H2>
-
-    <P>
-      På lördagen 2024-05-25 kommer vi att ha bröllopsfirande i Årås Kvarn. Vi
-      kommer att ha utfört en borgerlig vigsel i förväg men vi vill ändå hålla
-      en ceremoni med familj och vänner på plats. Läs mer under <VigselLink />.
-    </P>
-    <P>
-      Anmälan till bröllopet kommer att senast behöva göras xxxx-xx-xx. Mer om
-      detta och vart anmälan görs kan du läsa under <AnmalanLink />.
-    </P>
-    <P>
-      Om du vill hålla tal eller liknande så kan det vara bra att få tag i
-      toastmastrarna. Läs mer om det under <TalLink />.
-    </P>
-    <P>
-      prat prat prat, mer info behövs. lorem ipsum osåvidare Läs mer under{' '}
-      <InfoLink />.
-    </P>
-    <ImgCard>
-      <Img src="/norway_kiss.jpg" />
-      <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
-    </ImgCard>
-  </div>
+const ImageBox: React.VFC = () => (
+  <ImgCard>
+    <Img src="/norway_kiss.jpg" />
+    <ImgText>Från Frieriet Utanför Tromsö i Norge, 2023-10-31</ImgText>
+  </ImgCard>
 );
+
+export const Home: React.VFC = () => {
+  return (
+    <div>
+      <H2>Vi ska gifta oss!</H2>
+
+      <P>
+        På lördagen 2024-05-25 kommer vi att ha bröllopsfirande i Årås Kvarn. Vi
+        kommer att ha utfört en borgerlig vigsel i förväg men vi vill ändå hålla
+        en ceremoni med familj och vänner på plats. Läs mer under <VigselLink />
+        .
+      </P>
+      <P>
+        Anmälan till bröllopet kommer att senast behöva göras xxxx-xx-xx. Mer om
+        detta och vart anmälan görs kan du läsa under <AnmalanLink />.
+      </P>
+      <P>
+        Om du vill hålla tal eller liknande så kan det vara bra att få tag i
+        toastmastrarna. Läs mer om det under <TalLink />.
+      </P>
+      <P>
+        prat prat prat, mer info behövs. lorem ipsum osåvidare Läs mer under{' '}
+        <InfoLink />.
+      </P>
+      {renderAsMobile ? <ImageBox /> : ''}
+    </div>
+  );
+};

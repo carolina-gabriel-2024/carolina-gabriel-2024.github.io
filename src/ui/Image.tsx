@@ -14,9 +14,8 @@ export const ImgCardForm = styled('div', {
 
 export const SideImgCard = styled('div', {
   ...BoxCss,
-  maxHeight: '300px',
-  marginLeft: '18px',
-  marginBottom: '18px',
+  marginBottom: '10px',
+  marginTop: '0px',
   flex: '1',
 });
 
@@ -28,10 +27,13 @@ export const SideImg = styled('img', {
 
 export const Img = styled('img', {
   width: '100%',
-  height: '20%',
+  height: '50%',
   objectFit: 'contain',
 });
-export const ImgText = styled('p', {
+export const ImgText = styled('div', {
+  padding: '0px',
+  contentFit: 'contain',
+  height: 'fit-content',
   margin: '5px 0px 0px 0px',
   color: 'Grey',
   fontFamily: 'Papyrus',
