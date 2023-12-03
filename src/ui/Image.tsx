@@ -7,19 +7,21 @@ import { renderAsDesktop, renderAsMobile } from './style/Mobile';
 export const ShuffledImageList = [
   {
     key: '/norway_kiss.jpg',
+    iframe: false,
     text: 'Från Frieriet Utanför Tromsö i Norge, 2023-10-31',
   },
   {
-    key: '/norway_kiss.jpg',
-    text: 'Frieriet Utanför Tromsö i Norge, 2023-10-31',
+    key:
+      'https://lh3.googleusercontent.com/pw/ADCreHcVmrjHPaT61RJ8mJxM8SKfmeUKcub-YCcJw-VpgMnAQeJx--T0MSpIn6Gsya-kEmxZ81XbeN284IUIlKPlDNQ59h7RYHCHQyve468SnxSTkjRsHgmCbCF0OIv_sr1xXCleZ-xmwaVCTF_xeBMHg3BEKw=w1292-h969-s-no-gm',
+    iframe: false,
+    text: 'Kotte. 2023',
   },
-  { key: '/norway_kiss.jpg', text: 'Utanför Tromsö i Norge, 2023-10-31' },
-  { key: '/norway_kiss.jpg', text: 'Tromsö i Norge, 2023-10-31' },
-  { key: '/norway_kiss.jpg', text: 'i Norge, 2023-10-31' },
-  { key: '/norway_kiss.jpg', text: 'Norge, 2023-10-31' },
-  { key: '/norway_kiss.jpg', text: '2023-10-31' },
-  { key: '/norway_kiss.jpg', text: '10-31' },
-  { key: '/norway_kiss.jpg', text: '31' },
+  {
+    key:
+      'https://drive.google.com/file/d/1M6UeDpUIK8E0zl3sfNj3IiwDEg287m9D/preview',
+    iframe: true,
+    text: 'Roadtrip i Norge, 2021',
+  },
 ]
   .map((value) => ({ value, sort: Math.random() }))
   .sort((a, b) => a.sort - b.sort)
@@ -44,6 +46,12 @@ export const SideImgCard = styled('div', {
 });
 
 export const SideImg = styled('img', {
+  width: '100%',
+  height: '220px',
+  objectFit: 'cover',
+});
+
+export const SideIframe = styled('iframe', {
   width: '100%',
   height: '220px',
   objectFit: 'cover',

@@ -24,6 +24,7 @@ import {
   SideImgCard,
   ImgCard,
   SideImg,
+  SideIframe,
   ShuffledImageList,
 } from './ui/Image';
 import { Shortcuts } from './ui/Shortcuts';
@@ -124,7 +125,7 @@ const SideImages: React.VFC = () => {
     <ImageContainer>
       {images.map((o) => (
         <SideImgCard>
-          <SideImg src={o.key} />
+          {o.iframe ? <SideIframe src={o.key} /> : <SideImg src={o.key} />}
           <ImgText>{o.text}</ImgText>
         </SideImgCard>
       ))}
