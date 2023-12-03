@@ -14,7 +14,7 @@ export const Osa: React.VFC = () => (
   <div>
     <H2>OSA!</H2>
     <P>
-      sista dag för svar är 2024-02-05 Anmälan görs genom{' '}
+      sista dag för svar är 2024-02-04 Anmälan görs genom{' '}
       <InteractiveLink href={GoogleFormLink} target="_blank">
         Google forms
       </InteractiveLink>

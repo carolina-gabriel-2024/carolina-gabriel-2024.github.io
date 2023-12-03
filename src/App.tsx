@@ -10,6 +10,7 @@ import { Boende } from './components/info/Boende';
 import { Clothing } from './components/info/Clothing';
 import { Plats } from './components/info/Plats';
 import { Talare } from './components/Talare';
+import { Kontakt } from './components/Kontakt';
 import { Vigsel } from './components/Vigsel';
 import { ExampleTwoDeepComponent } from './components/ExampleTwoDeepComponent';
 import { SitemapLinkGenerator } from './components/SitemapLinkGenerator';
@@ -117,40 +118,6 @@ const FooterCard = styled('div', {
   backgroundColor: transparentBg,
 });
 
-const Footer: React.VFC = () => (
-  <div>
-    <h3>Platskarta</h3>
-    <ul>
-      <li>
-        <RouterLink to="/">Hem</RouterLink>{' '}
-      </li>
-      <li>
-        <RouterLink to="/vigsel">Vigsel</RouterLink>
-      </li>
-      <li>
-        <RouterLink to="/osa">OSA</RouterLink>
-      </li>
-      <li>
-        <RouterLink to="/info">Info</RouterLink>
-        <ul>
-          <li>
-            <RouterLink to="/info/boende">Boende</RouterLink>
-          </li>
-          <li>
-            <RouterLink to="/info/plats">Plats</RouterLink>
-          </li>
-          <li>
-            <RouterLink to="/info/klader">Kläder</RouterLink>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <RouterLink to="/talare">Tal & Spex</RouterLink>
-      </li>
-    </ul>
-  </div>
-);
-
 const SideImages: React.VFC = () => {
   let images = ShuffledImageList.slice(0, 3);
   return (
@@ -187,20 +154,11 @@ export const App: React.VFC = () => {
             <Route exact path="/vigsel" component={Vigsel} />
             <Route exact path="/osa" component={Osa} />
             <Route exact path="/talare" component={Talare} />
+            <Route exact path="/kontakt" component={Kontakt} />
             <Route exact path="/info" component={Info} />
-            <Route exact path="/info/plats" component={Plats} />
-            <Route exact path="/info/kladsel" component={Clothing} />
-            <Route exact path="/info/boende" component={Boende} />
-            <Route
-              exact
-              path="/example/two-deep"
-              component={ExampleTwoDeepComponent}
-            />
-            <Route
-              exact
-              path="/sitemap-link-generator"
-              component={SitemapLinkGenerator}
-            />
+            <Route exact path="/info-plats" component={Plats} />
+            <Route exact path="/info-kladsel" component={Clothing} />
+            <Route exact path="/info-boende" component={Boende} />
             <Route component={PageNotFound} />
           </Switch>
         </MainPage>

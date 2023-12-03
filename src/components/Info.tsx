@@ -30,9 +30,11 @@ export const Info: React.VFC = () => (
   <div>
     <H2>Info!</H2>
     <P>
+      den här sidan kanske försvinner om det andra nämns på startsidan.
       <PlatsLink />
       <KladerLink />
       <BoendeLink />
+      transport-grejjer
     </P>
   </div>
 );

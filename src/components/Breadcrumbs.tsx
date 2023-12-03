@@ -8,7 +8,7 @@ interface breadCrumbTitlesInterface {
 }
 
 const breadCrumbTitles: breadCrumbTitlesInterface = {
-  '': 'Home',
+  '': 'Välkomna',
   info: 'Info',
   vigsel: 'Vigsel',
   anmalan: 'Anmälan',
@@ -17,6 +17,10 @@ const breadCrumbTitles: breadCrumbTitlesInterface = {
   plats: 'Plats',
   kladsel: 'Klädsel',
   boende: 'Boende',
+  'info-plats': 'Information: Årås Kvarn',
+  'info-boende': 'Information: Boende',
+  'info-kladsel': 'Information: Klädsel',
+  kontakt: 'Kontakt',
 };
 
 const CSpan = styled('span', {
