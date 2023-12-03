@@ -2,9 +2,19 @@
     "name": "Gabriel och Carolina 2024",
     "icons": [
         {
-            "src": "/favicon/kotte-vanlig.svg",
+            "src": "/favicon/kotte-grey.svg",
             "sizes": "512x512",
             "type": "image/svg"
+        },
+        {
+            "src": "/favicon/kotte-grey-500.png",
+            "sizes": "500x500",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon/kotte-grey-255.png",
+            "sizes": "255x255",
+            "type": "image/png"
         }
     ],
     "theme_color": "#000000",
