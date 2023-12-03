@@ -28,11 +28,12 @@ import {
 import { Shortcuts } from './ui/Shortcuts';
 import { renderAsDesktop } from './ui/style/Mobile';
 
-const opacityLevel = 0.93;
+const opacityLevel = 1.0;
 const transparentBg = `rgba(255,255,255, ${opacityLevel})`;
 
 let viewPortHeight =
-  (window.visualViewport.height - (75 + 39.5 + 75)).toString() + 'px';
+  (window.visualViewport.height - (renderAsDesktop ? 200 : 250)).toString() +
+  'px';
 let viewPortWidth =
   (window.visualViewport.width * (renderAsDesktop ? 0.8 : 1)).toString() + 'px';
 
@@ -87,7 +88,6 @@ const MainContainer = styled('div', {
   paddingBottom: '10px',
   height: viewPortHeight,
 });
-const ImageBox = styled('div', {});
 
 const ImageContainer = styled('div', {
   flex: 1,

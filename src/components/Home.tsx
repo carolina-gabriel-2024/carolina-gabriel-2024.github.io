@@ -3,8 +3,13 @@ import { InteractiveLink } from '../ui/InteractiveLink';
 import { P, H2 } from '../ui/Paragraph';
 import { styled } from '../stitches.config';
 import { BoxCss } from '../ui/style/BoxCss';
-import { Img, ImgText, ImgCard, ShuffledImageList } from '../ui/Image';
-import { renderAsMobile } from '../ui/style/Mobile';
+import {
+  Img,
+  ImgText,
+  ImgCard,
+  ShuffledImageList,
+  SingleImageCard,
+} from '../ui/Image';
 
 const LinkContainer = styled('span', {
   display: 'block',
@@ -26,16 +31,6 @@ const AnmalanLink: React.VFC = () => (
 const TalLink: React.VFC = () => (
   <InteractiveLink href="/talare">Tal & Spex</InteractiveLink>
 );
-
-const ImageBox: React.VFC = () => {
-  let i = ShuffledImageList[0];
-  return (
-    <ImgCard>
-      <Img src={i.key} />
-      <ImgText>{i.text}</ImgText>
-    </ImgCard>
-  );
-};
 
 export const Home: React.VFC = () => {
   return (
@@ -60,7 +55,7 @@ export const Home: React.VFC = () => {
         prat prat prat, mer info behövs. lorem ipsum osåvidare Läs mer under{' '}
         <InfoLink />.
       </P>
-      {renderAsMobile ? <ImageBox /> : ''}
+      <SingleImageCard />
     </div>
   );
 };

@@ -97,13 +97,13 @@ export const Shortcuts: React.VFC = () => {
           ----
         </option>
         <option value="/info">Information</option>
-        <option value="/info/plats"> - Plats</option>
-        <option value="/info/kladsel"> - Klädsel</option>
-        <option value="/info/boende"> - Boende</option>
+        <option value="/info/plats"> {'>'} Plats</option>
+        <option value="/info/kladsel"> {'>'} Klädsel</option>
+        <option value="/info/boende"> {'>'} Boende</option>
         <option value="placeholder" disabled>
           ----
         </option>
-        <option value="/talare"> - Tal & Spex</option>
+        <option value="/talare">Tal & Spex</option>
       </Select>
     </SelectContainer>
   );

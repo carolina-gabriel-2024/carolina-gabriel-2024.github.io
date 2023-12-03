@@ -1,5 +1,8 @@
+import * as React from 'react';
+
 import { styled } from '../stitches.config';
 import { BoxCss } from './style/BoxCss';
+import { renderAsDesktop, renderAsMobile } from './style/Mobile';
 
 export const ShuffledImageList = [
   {
@@ -59,3 +62,17 @@ export const ImgText = styled('div', {
   color: 'Grey',
   fontFamily: 'Papyrus',
 });
+
+export const SingleImageCard: React.VFC = () => {
+  let i = ShuffledImageList[0];
+  if (renderAsMobile) {
+    return (
+      <ImgCard>
+        <Img src={i.key} />
+        <ImgText>{i.text}</ImgText>
+      </ImgCard>
+    );
+  } else {
+    return <span></span>;
+  }
+};

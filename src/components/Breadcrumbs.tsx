@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Route, RouteComponentProps } from 'react-router-dom';
 import { InteractiveLink } from '../ui/InteractiveLink';
+import { styled } from '../stitches.config';
 
 interface breadCrumbTitlesInterface {
   [key: string]: string | undefined;
@@ -18,6 +19,11 @@ const breadCrumbTitles: breadCrumbTitlesInterface = {
   boende: 'Boende',
 };
 
+const CSpan = styled('span', {
+  margin: 'auto 0',
+  fontSize: '24px',
+});
+
 const BreadcrumbsItem: React.VFC<RouteComponentProps> = ({ match }) => {
   const path =
     match.url.length > 1 && match.url[match.url.length - 1] === '/'
@@ -28,7 +34,7 @@ const BreadcrumbsItem: React.VFC<RouteComponentProps> = ({ match }) => {
   const to = title === undefined ? '/' : path;
 
   return (
-    <span>
+    <CSpan>
       <InteractiveLink to={to}>{title || 'Page Not Found'}</InteractiveLink>
       {!match.isExact && title && ' / '}
       {title && (
@@ -37,7 +43,7 @@ const BreadcrumbsItem: React.VFC<RouteComponentProps> = ({ match }) => {
           component={BreadcrumbsItem}
         />
       )}
-    </span>
+    </CSpan>
   );
 };
 
