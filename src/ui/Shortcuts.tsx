@@ -91,6 +91,7 @@ export const Shortcuts: React.VFC = () => {
         <option value="placeholder" disabled>
           {text}
         </option>
+        <option value="/">Start</option>
         <option value="/osa">Anmälan</option>
         <option value="/vigsel">Vigsel</option>
         <option value="placeholder" disabled>
@@ -102,6 +103,8 @@ export const Shortcuts: React.VFC = () => {
         <option value="/info-plats"> {'>'} Plats</option>
         <option value="/info-kladsel"> {'>'} Klädsel</option>
         <option value="/info-boende"> {'>'} Boende</option>
+        <option value="/info-transport"> {'>'} Transport </option>
+        <option value="/info-schema"> {'>'} Schema </option>
         <option value="placeholder" disabled>
           ----
         </option>

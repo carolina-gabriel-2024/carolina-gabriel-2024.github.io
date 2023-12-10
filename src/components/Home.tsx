@@ -17,21 +17,29 @@ const LinkContainer = styled('span', {
 });
 
 const InfoPlatsLink: React.VFC = () => (
-  <InteractiveLink href="/info-plats">Information: Plats</InteractiveLink>
+  <InteractiveLink href="/info-plats">
+    Årås Kvarn utanför Ulricehamn
+  </InteractiveLink>
 );
 const InfoKladselLink: React.VFC = () => (
-  <InteractiveLink href="/info-kladsel">Information: Klädsel</InteractiveLink>
+  <InteractiveLink href="/info-kladsel">Klädkod</InteractiveLink>
+);
+const InfoKladsel2Link: React.VFC = () => (
+  <InteractiveLink href="/info-kladsel">här</InteractiveLink>
 );
 const InfoBoendeLink: React.VFC = () => (
   <InteractiveLink href="/info-boende">Information: Boende</InteractiveLink>
 );
 
 const KontaktLink: React.VFC = () => (
-  <InteractiveLink href="/kontakt">kontakta folk</InteractiveLink>
+  <InteractiveLink href="/kontakt">kontaktuppgifter här</InteractiveLink>
 );
 
 const VigselLink: React.VFC = () => (
   <InteractiveLink href="/vigsel">Vigseln</InteractiveLink>
+);
+const VigselOchMingelLink: React.VFC = () => (
+  <InteractiveLink href="/vigsel">Vigsel och mingel</InteractiveLink>
 );
 
 const AnmalanLink: React.VFC = () => (
@@ -41,6 +49,9 @@ const AnmalanLink: React.VFC = () => (
 const TalLink: React.VFC = () => (
   <InteractiveLink href="/talare">Tal & Spex</InteractiveLink>
 );
+const SchemaLink: React.VFC = () => (
+  <InteractiveLink href="/info-schema">Schema</InteractiveLink>
+);
 
 export const Home: React.VFC = () => {
   return (
@@ -48,23 +59,35 @@ export const Home: React.VFC = () => {
       <H2>Vi ska gifta oss!</H2>
 
       <P>
-        Jag vill skriva här istället. På lördagen 2024-05-25 kommer vi att ha
-        bröllopsfirande i Årås Kvarn. Vi kommer att ha utfört en borgerlig
-        vigsel i förväg men vi vill ändå hålla en ceremoni med familj och vänner
-        på plats. Läs mer under <VigselLink />.
+        Lördagen den 25e maj 2024 blir det bröllopsfirande på <InfoPlatsLink />.
+        Vi kommer att ha utfört en borgerlig vigsel i förväg men vill ändå hålla
+        en ceremoni med familj och vänner på plats. Läs mer under <VigselLink />
+        . För planen för helgen läs mer under <SchemaLink />
       </P>
       <P>
-        Anmälan till bröllopet kommer att senast behöva göras xxxx-xx-xx. Mer om
-        detta och vart anmälan görs kan du läsa under <AnmalanLink />.
+        Vi gillar barn och de är hjärtligt välkomna på <VigselOchMingelLink />.
+        Middagen som börjar vid 18 önskar vi dock spendera i vuxet sällskap utan
+        barn, med undantag för ammande spädbarn.
       </P>
       <P>
-        Om du vill hålla tal eller liknande så kan det vara bra att få tag i
-        toastmastrarna. Läs mer om det under <TalLink />.
+        Låt oss veta om du kan närvara på festligheterna senaste 4e februari
+        2024! Mer om detta och vart anmälan görs kan du läsa under{' '}
+        <AnmalanLink />.
       </P>
       <P>
-        prat prat prat, mer info behövs. lorem ipsum osåvidare Läs mer under{' '}
-        <InfoPlatsLink />, <InfoKladselLink /> & <InfoBoendeLink />. länk för
-        att <KontaktLink />.
+        Vill du hålla tal eller liknande kan det vara bra att få tag i våra
+        fantastiska toastmasters Julia och Philip. Läs mer om det under{' '}
+        <TalLink />.
+      </P>
+      <P>
+        Det finns ett antal boenden på säteriet som bokas via oss, läs mer under{' '}
+        <InfoBoendeLink />.
+      </P>
+      <P>
+        För <InfoKladselLink /> under bröllopet, läs mer <InfoKladsel2Link />.
+      </P>
+      <P>
+        Vi har även sammanställt lite <KontaktLink />.
       </P>
       <SingleImageCard />
     </div>

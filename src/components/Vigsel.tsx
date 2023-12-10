@@ -18,11 +18,15 @@ export const Vigsel: React.VFC = () => (
   <div>
     <H2>Vigsel!</H2>
     <P>
-      Vi kommer att försöka hålla vigselceremonin i ett grönområde i närheten av
-      festlokalen. Vigseln planeras att hållas XX:XX, så en samlingstid YY:YY
-      rekommenderas. Efter vigseln sker det mingel och fotografering. Det kan
-      vara bra att ta med skor för att kunna korsa en äng. Om det mot förmodan
-      skulle regna så finns det ett antal backup-planer.
+      Om vädret tillåter planerar vi att hålla vigselceremonin i ett grönområde
+      i närheten av festlokalen. Vigseln startar 14:30, samlingstid 14:00 på den
+      stora parkeringen rekommenderas så lotsas ni rätt därifrån.
     </P>
+    <P>
+      Efter vigseln blir det mingel och fotografering. Det kan vara bra att ta
+      med skor för att kunna korsa en äng. Om det mot förmodan skulle regna så
+      finns det ett antal backup-planer.
+    </P>
+    <P>Mer detaljer kommer är det närmar sig!</P>
   </div>
 );

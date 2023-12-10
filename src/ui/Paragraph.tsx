@@ -10,3 +10,13 @@ export const H2 = styled('h2', {
   fontSize: '22px',
   marginRight: '12px',
 });
+
+export const H3 = styled('h3', {
+  fontSize: '16px',
+  fontWeight: 'bold',
+});
+
+export const TD = styled('td', {
+  marginRight: '15px',
+  paddingRight: '15px',
+});

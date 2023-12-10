@@ -9,6 +9,8 @@ import { Osa } from './components/Osa';
 import { Boende } from './components/info/Boende';
 import { Clothing } from './components/info/Clothing';
 import { Plats } from './components/info/Plats';
+import { Transport } from './components/info/Transport';
+import { Schema } from './components/info/Schema';
 import { Talare } from './components/Talare';
 import { Kontakt } from './components/Kontakt';
 import { Vigsel } from './components/Vigsel';
@@ -160,6 +162,8 @@ export const App: React.VFC = () => {
             <Route exact path="/info-plats" component={Plats} />
             <Route exact path="/info-kladsel" component={Clothing} />
             <Route exact path="/info-boende" component={Boende} />
+            <Route exact path="/info-transport" component={Transport} />
+            <Route exact path="/info-schema" component={Schema} />
             <Route component={PageNotFound} />
           </Switch>
         </MainPage>

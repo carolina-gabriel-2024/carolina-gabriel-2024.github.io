@@ -3,20 +3,18 @@ import { InteractiveLink } from '../ui/InteractiveLink';
 import { P, H2 } from '../ui/Paragraph';
 import { styled } from '../stitches.config';
 
-const LinkContainer = styled('span', {
-  display: 'block',
-  margin: '8px 0',
-});
-
-const RepoReadmeLink: React.VFC = () => (
-  <InteractiveLink href="https://github.com/rafgraph/spa-github-pages#readme">
-    repo readme
+const Toast: React.VFC = () => (
+  <InteractiveLink href="mailto:toastmaster.gabrielochcarolina@gmail.com">
+    toastmaster.gabrielochcarolina@gmail.com
   </InteractiveLink>
 );
 
 export const Talare: React.VFC = () => (
   <div>
     <H2>Talare!</H2>
-    <P>Kontakt-uppgifter till Toastmasters</P>
+    <P>
+      För att komma i kontakt med våra toastmasters Philip och Julia, skriv
+      gärna ett mail till <Toast />
+    </P>
   </div>
 );

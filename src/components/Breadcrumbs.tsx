@@ -20,6 +20,8 @@ const breadCrumbTitles: breadCrumbTitlesInterface = {
   'info-plats': 'Information: Årås Kvarn',
   'info-boende': 'Information: Boende',
   'info-kladsel': 'Information: Klädsel',
+  'info-transport': 'Information: Transport',
+  'info-schema': 'Information: Schema',
   kontakt: 'Kontakt',
 };
 
