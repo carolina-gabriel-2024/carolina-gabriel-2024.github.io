@@ -30,6 +30,7 @@ import {
   ShuffledImageList,
 } from './ui/Image';
 import { Shortcuts } from './ui/Shortcuts';
+import { InteractiveLink } from './ui/InteractiveLink';
 import { renderAsDesktop } from './ui/style/Mobile';
 
 const opacityLevel = 1.0;
@@ -121,8 +122,10 @@ const FooterCard = styled('div', {
   backgroundColor: transparentBg,
 });
 
+const ImgA = styled('a', {});
+
 const SideImages: React.VFC = () => {
-  let images = ShuffledImageList.slice(0, 5);
+  let images = ShuffledImageList.slice(0, 6);
   return (
     <ImageContainer>
       {images.map((o) => (
@@ -130,11 +133,13 @@ const SideImages: React.VFC = () => {
           {o.iframe ? (
             <SideIframe src={o.key} />
           ) : (
-            <a href={o.key} target="_blank">
+            <ImgA href={o.key} target="_blank">
               <SideImg src={o.key} />
-            </a>
+            </ImgA>
           )}
-          <ImgText>{o.text}</ImgText>
+          <InteractiveLink href={o.key} target="_blank">
+            {o.text}
+          </InteractiveLink>
         </SideImgCard>
       ))}
     </ImageContainer>

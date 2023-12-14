@@ -11,7 +11,7 @@ export const ShuffledImageList = [
     text: 'Från Frieriet Utanför Tromsö i Norge, 2023-10-31',
   },
   {
-    key: '/bilder/island_hastar.HEIC',
+    key: '/bilder/island_hastar.png',
     iframe: false,
     text: 'Rida islandshästar i Halland, 2021-10-31',
   },
@@ -31,7 +31,7 @@ export const ShuffledImageList = [
     text: 'Kollage från Vår Cuba-resa, 2017 - 2018',
   },
   {
-    key: '/bilder/norge0.HEIC',
+    key: '/bilder/norge0.png',
     iframe: false,
     text: 'Från Frieri-resan Utanför Tromsö i Norge, 2023-11-03',
   },
@@ -51,37 +51,37 @@ export const ShuffledImageList = [
     text: 'Glada på Erik och Emelies Bröllop, 2018',
   },
   {
-    key: '/bilder/klattra_norge.HEIC',
+    key: '/bilder/klattra_norge.png',
     iframe: false,
     text: 'Bergspromenad i Jotunheimen, 2019',
   },
   {
-    key: '/bilder/vinje.HEIC',
+    key: '/bilder/vinje.png',
     iframe: false,
     text: 'Varma och glada på Vinjerock, 2019',
   },
   {
-    key: '/bilder/oldrick.HEIC',
+    key: '/bilder/oldrick.png',
     iframe: false,
     text: 'Lyxig läsk, Varför inte?',
   },
   {
-    key: '/bilder/vinje.HEIC',
+    key: '/bilder/vinje_dragg.JPG',
     iframe: false,
     text: 'Glada och dräggiga på Vinjerock, 2019',
   },
   {
-    key: '/bilder/cypern_drink.HEIC',
+    key: '/bilder/cypern_drink.png',
     iframe: false,
     text: 'Smoothies på Cypern, Okt 2021',
   },
   {
-    key: '/bilder/cypern_bad.HEIC',
+    key: '/bilder/cypern_bad.png',
     iframe: false,
     text: 'Snorkling på Cypern, Okt 2021',
   },
   {
-    key: '/bilder/blasjon.HEIC',
+    key: '/bilder/blasjon.png',
     iframe: false,
     text: 'Skotertur med Ture på Stora Blåsjön, Påsk 2022',
   },
@@ -91,12 +91,12 @@ export const ShuffledImageList = [
     text: 'Glada på vårbal , 2018',
   },
   {
-    key: '/bilder/blasjon_dal.HEIC',
+    key: '/bilder/blasjon_dal.png',
     iframe: false,
     text: 'Naturpromenad i Bjurälvens naturreservat, 2023',
   },
   {
-    key: '/bilder/blasjon_vatten.HEIC',
+    key: '/bilder/blasjon_vatten.png',
     iframe: false,
     text: 'Forsskådning längs Vildmarksvägen, 2023',
   },
@@ -145,8 +145,9 @@ export const SideImgCard = styled('div', {
 
 export const SideImg = styled('img', {
   width: '100%',
-  height: '400px',
+  height: 'auto',
   objectFit: 'cover',
+  marginBottom: '10px',
 });
 
 export const SideIframe = styled('iframe', {
