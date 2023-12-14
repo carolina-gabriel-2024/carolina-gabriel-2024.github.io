@@ -31,7 +31,8 @@ export const Schema: React.VFC = () => (
 
     <P>
       <H3>Söndag </H3>
-      För de gäster som bott över på säterier och
+      För de gäster som bott över på säteriet eller bor i närheten serveras det
+      för dem som vill en brunch innan man far hemåt. Mer info kommer.
     </P>
   </div>
 );

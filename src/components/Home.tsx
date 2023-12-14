@@ -30,6 +30,11 @@ const InfoKladsel2Link: React.VFC = () => (
 const InfoBoendeLink: React.VFC = () => (
   <InteractiveLink href="/info-boende">Information: Boende</InteractiveLink>
 );
+const InfoTransportLink: React.VFC = () => (
+  <InteractiveLink href="/info-transport">
+    Information: Transport
+  </InteractiveLink>
+);
 
 const KontaktLink: React.VFC = () => (
   <InteractiveLink href="/kontakt">kontaktuppgifter här</InteractiveLink>
@@ -81,7 +86,8 @@ export const Home: React.VFC = () => {
       </P>
       <P>
         Det finns ett antal boenden på säteriet som bokas via oss, läs mer under{' '}
-        <InfoBoendeLink />.
+        <InfoBoendeLink />. Om man bor på annan ort men behöver ta sig till/från
+        säteriet kan det hittas mer under <InfoTransportLink />.
       </P>
       <P>
         För <InfoKladselLink /> under bröllopet, läs mer <InfoKladsel2Link />.

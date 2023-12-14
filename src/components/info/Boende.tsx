@@ -9,6 +9,10 @@ const Mail: React.VFC = () => (
   </InteractiveLink>
 );
 
+const InfoTransportLink: React.VFC = () => (
+  <InteractiveLink href="/info-transport">Transport</InteractiveLink>
+);
+
 export const Boende: React.VFC = () => (
   <div>
     <H2>Boende under bröllopshelgen</H2>
@@ -76,7 +80,7 @@ export const Boende: React.VFC = () => (
       i Ulricehamn som ligger 15-20 minuter bort. Vi har pratat med Ulricehamn
       taxi och förberett dem på att vi kommer ha gäster bröllop på säteriet och
       det skulle inte vara något problem att boka taxi under kvällen/natten. Mer
-      info under Transport.
+      info under <InfoTransportLink />.
     </P>
     <P></P>
   </div>
