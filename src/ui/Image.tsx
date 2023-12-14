@@ -6,21 +6,119 @@ import { renderAsDesktop, renderAsMobile } from './style/Mobile';
 
 export const ShuffledImageList = [
   {
-    key: '/norway_kiss.jpg',
+    key: '/bilder/norway_kiss.jpg',
     iframe: false,
     text: 'Från Frieriet Utanför Tromsö i Norge, 2023-10-31',
   },
   {
-    key:
-      'https://lh3.googleusercontent.com/pw/ADCreHcVmrjHPaT61RJ8mJxM8SKfmeUKcub-YCcJw-VpgMnAQeJx--T0MSpIn6Gsya-kEmxZ81XbeN284IUIlKPlDNQ59h7RYHCHQyve468SnxSTkjRsHgmCbCF0OIv_sr1xXCleZ-xmwaVCTF_xeBMHg3BEKw=w1292-h969-s-no-gm',
+    key: '/bilder/island_hastar.HEIC',
     iframe: false,
-    text: 'Kotte. 2023',
+    text: 'Rida islandshästar i Halland, 2021-10-31',
   },
   {
-    key:
-      'https://drive.google.com/file/d/1M6UeDpUIK8E0zl3sfNj3IiwDEg287m9D/preview',
-    iframe: true,
-    text: 'Roadtrip i Norge, 2021',
+    key: '/bilder/combo0.jpg',
+    iframe: false,
+    text: 'Kollage med lite olika äventyr, 2017 - 2021',
+  },
+  {
+    key: '/bilder/combo1.jpg',
+    iframe: false,
+    text: 'Kollage med bilder bröllop, 2017 - 2019',
+  },
+  {
+    key: '/bilder/combo2.jpg',
+    iframe: false,
+    text: 'Kollage från Vår Cuba-resa, 2017 - 2018',
+  },
+  {
+    key: '/bilder/norge0.HEIC',
+    iframe: false,
+    text: 'Från Frieri-resan Utanför Tromsö i Norge, 2023-11-03',
+  },
+  {
+    key: '/bilder/bygga_bo.jpg',
+    iframe: false,
+    text: 'Skrivit på kontrakt för huset!, sommaren 2020',
+  },
+  {
+    key: '/bilder/bjorne.jpg',
+    iframe: false,
+    text: 'Besök på SVT och Björne, 2019',
+  },
+  {
+    key: '/bilder/brollis.jpg',
+    iframe: false,
+    text: 'Glada på Erik och Emelies Bröllop, 2018',
+  },
+  {
+    key: '/bilder/klattra_norge.HEIC',
+    iframe: false,
+    text: 'Bergspromenad i Jotunheimen, 2019',
+  },
+  {
+    key: '/bilder/vinje.HEIC',
+    iframe: false,
+    text: 'Varma och glada på Vinjerock, 2019',
+  },
+  {
+    key: '/bilder/oldrick.HEIC',
+    iframe: false,
+    text: 'Lyxig läsk, Varför inte?',
+  },
+  {
+    key: '/bilder/vinje.HEIC',
+    iframe: false,
+    text: 'Glada och dräggiga på Vinjerock, 2019',
+  },
+  {
+    key: '/bilder/cypern_drink.HEIC',
+    iframe: false,
+    text: 'Smoothies på Cypern, Okt 2021',
+  },
+  {
+    key: '/bilder/cypern_bad.HEIC',
+    iframe: false,
+    text: 'Snorkling på Cypern, Okt 2021',
+  },
+  {
+    key: '/bilder/blasjon.HEIC',
+    iframe: false,
+    text: 'Skotertur med Ture på Stora Blåsjön, Påsk 2022',
+  },
+  {
+    key: '/bilder/bal.PNG',
+    iframe: false,
+    text: 'Glada på vårbal , 2018',
+  },
+  {
+    key: '/bilder/blasjon_dal.HEIC',
+    iframe: false,
+    text: 'Naturpromenad i Bjurälvens naturreservat, 2023',
+  },
+  {
+    key: '/bilder/blasjon_vatten.HEIC',
+    iframe: false,
+    text: 'Forsskådning längs Vildmarksvägen, 2023',
+  },
+  {
+    key: '/bilder/danmark.JPG',
+    iframe: false,
+    text: 'Turistbild i Köpenhamn! ~ 2018',
+  },
+  {
+    key: '/bilder/osterike.JPG',
+    iframe: false,
+    text: 'Parkhäng i Wien! ~ 2019',
+  },
+  {
+    key: '/bilder/cypern_sol.JPG',
+    iframe: false,
+    text: 'Grottskådning på Cypern, 2021',
+  },
+  {
+    key: '/bilder/norge_berg.JPG',
+    iframe: false,
+    text: 'Bergspromenad i Jotunheimen, 2019',
   },
 ]
   .map((value) => ({ value, sort: Math.random() }))
@@ -47,7 +145,7 @@ export const SideImgCard = styled('div', {
 
 export const SideImg = styled('img', {
   width: '100%',
-  height: '220px',
+  height: '400px',
   objectFit: 'cover',
 });
 

@@ -9,6 +9,15 @@ const Mail: React.VFC = () => (
   </InteractiveLink>
 );
 
+const BoendeBilder: React.VFC = () => (
+  <InteractiveLink
+    href="https://www.arassateri.se/vandrarhem-mejeriet/"
+    target="_blank"
+  >
+    Bilder från boendet.
+  </InteractiveLink>
+);
+
 const InfoTransportLink: React.VFC = () => (
   <InteractiveLink href="/info-transport">Transport</InteractiveLink>
 );
@@ -31,11 +40,17 @@ export const Boende: React.VFC = () => (
       komma med husbil/husvagn/tält utan extra kostnad.
     </P>
 
+    <P>
+      <BoendeBilder />
+    </P>
+
     <H3>Rum Vandrarhem:</H3>
     <P>
-      I nästan alla rum finns det möjlighet att ställa in 1-2 extrasängar. Alla
-      rum i vandrarhemmet delar på ett par gemensamma badrum med dusch och
-      toalett.
+      Alla rum i vandrarhemmet delar på ett par gemensamma badrum med dusch och
+      toalett i samma byggnad. I nästan alla rum finns det möjlighet att ställa
+      in 1-2 extrasängar, och det finns ca 6st sådana att tillgå på säteriet.
+      Man kan hyra lakan/handdukar för 139kr/enhet eller så kan man ta med sig
+      egna. Var snälla om meddela detta när ni hör av er om boende.
       <table>
         <tr>
           <TD></TD>
@@ -52,7 +67,7 @@ export const Boende: React.VFC = () => (
           <TD>(1700 fre-sön)</TD>
         </tr>
         <tr>
-          <TD></TD>
+          <TD>Fullt</TD>
           <TD>2-bäddsrum</TD>
           <TD>1 våningsäng</TD>
           <TD>550kr /natt</TD>

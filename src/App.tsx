@@ -122,12 +122,18 @@ const FooterCard = styled('div', {
 });
 
 const SideImages: React.VFC = () => {
-  let images = ShuffledImageList.slice(0, 3);
+  let images = ShuffledImageList.slice(0, 5);
   return (
     <ImageContainer>
       {images.map((o) => (
         <SideImgCard>
-          {o.iframe ? <SideIframe src={o.key} /> : <SideImg src={o.key} />}
+          {o.iframe ? (
+            <SideIframe src={o.key} />
+          ) : (
+            <a href={o.key} target="_blank">
+              <SideImg src={o.key} />
+            </a>
+          )}
           <ImgText>{o.text}</ImgText>
         </SideImgCard>
       ))}
