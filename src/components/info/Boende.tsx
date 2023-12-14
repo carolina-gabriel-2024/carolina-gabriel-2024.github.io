@@ -2,7 +2,7 @@ import * as React from 'react';
 import { P, H2, H3, TD } from '../../ui/Paragraph';
 import { styled } from '../../stitches.config';
 import { InteractiveLink } from '../../ui/InteractiveLink';
-
+import { SingleImageCard } from '../../ui/Image';
 const Mail: React.VFC = () => (
   <InteractiveLink href="mailto:gabrielochcarolina@gmail.com">
     gabrielochcarolina@gmail.com
@@ -51,7 +51,9 @@ export const Boende: React.VFC = () => (
       in 1-2 extrasängar, och det finns ca 6st sådana att tillgå på säteriet.
       Man kan hyra lakan/handdukar för 139kr/enhet eller så kan man ta med sig
       egna. Var snälla om meddela detta när ni hör av er om boende.
-      <table>
+    </P>
+    <table>
+      <tbody>
         <tr>
           <TD></TD>
           <TD>4-bäddsrum</TD>
@@ -73,12 +75,14 @@ export const Boende: React.VFC = () => (
           <TD>550kr /natt</TD>
           <TD>(1100 fre-sön)</TD>
         </tr>
-      </table>
-    </P>
+      </tbody>
+    </table>
+    <P></P>
     <H3>Rum Hotell:</H3>
 
-    <P>
-      <table>
+    <P></P>
+    <table>
+      <tbody>
         <tr>
           <TD></TD>
           <TD>Nybyggt hotellrum 2023</TD>
@@ -86,8 +90,10 @@ export const Boende: React.VFC = () => (
           <TD>1250kr /natt</TD>
           <TD>(2500 fre-sön)</TD>
         </tr>
-      </table>
-    </P>
+      </tbody>
+    </table>
+
+    <P></P>
     <H3>Övriga:</H3>
 
     <P>
@@ -98,5 +104,6 @@ export const Boende: React.VFC = () => (
       info under <InfoTransportLink />.
     </P>
     <P></P>
+    <SingleImageCard />
   </div>
 );

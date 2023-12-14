@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { P, H2, H3 } from '../../ui/Paragraph';
 import { styled } from '../../stitches.config';
-
+import { SingleImageCard } from '../../ui/Image';
 export const Clothing: React.VFC = () => (
   <div>
     <H2>Klädkod</H2>
@@ -19,5 +19,6 @@ export const Clothing: React.VFC = () => (
       Då Årås Säteri ligger mellan två sjöar och vi har en badtokig brud så är
       det rekommenderat att ta med sig badkläder!
     </P>
+    <SingleImageCard />
   </div>
 );

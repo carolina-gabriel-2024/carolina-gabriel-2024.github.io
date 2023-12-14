@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { P, H2, H3 } from '../../ui/Paragraph';
 import { styled } from '../../stitches.config';
-
+import { SingleImageCard } from '../../ui/Image';
 export const Schema: React.VFC = () => (
   <div>
     <H2>Schema för Helgen!</H2>
@@ -34,5 +34,6 @@ export const Schema: React.VFC = () => (
       För de gäster som bott över på säteriet eller bor i närheten serveras det
       för dem som vill en brunch innan man far hemåt. Mer info kommer.
     </P>
+    <SingleImageCard />
   </div>
 );

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { InteractiveLink } from '../ui/InteractiveLink';
 import { P, H2 } from '../ui/Paragraph';
 import { styled } from '../stitches.config';
-
+import { SingleImageCard } from '../ui/Image';
 const LinkContainer = styled('span', {
   display: 'block',
   margin: '8px 0',
@@ -28,5 +28,6 @@ export const Vigsel: React.VFC = () => (
       finns det ett antal backup-planer.
     </P>
     <P>Mer detaljer kommer är det närmar sig!</P>
+    <SingleImageCard />
   </div>
 );
