@@ -46,7 +46,7 @@ export const ShuffledImageList = [
     text: 'Besök på SVT och Björne, 2019',
   },
   {
-    key: '/bilder/brollis.jpg',
+    key: '/bilder/brollis.JPG',
     iframe: false,
     text: 'Glada på Erik och Emelies Bröllop, 2018',
   },
