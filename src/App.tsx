@@ -10,6 +10,7 @@ import { Boende } from './components/info/Boende';
 import { Clothing } from './components/info/Clothing';
 import { Plats } from './components/info/Plats';
 import { Transport } from './components/info/Transport';
+import { Present } from './components/info/Present';
 import { Schema } from './components/info/Schema';
 import { Talare } from './components/Talare';
 import { Kontakt } from './components/Kontakt';
@@ -170,11 +171,12 @@ export const App: React.VFC = () => {
             <Route exact path="/talare" component={Talare} />
             <Route exact path="/kontakt" component={Kontakt} />
             <Route exact path="/info" component={Info} />
-            <Route exact path="/info-plats" component={Plats} />
-            <Route exact path="/info-kladsel" component={Clothing} />
             <Route exact path="/info-boende" component={Boende} />
-            <Route exact path="/info-transport" component={Transport} />
+            <Route exact path="/info-kladsel" component={Clothing} />
+            <Route exact path="/info-plats" component={Plats} />
+            <Route exact path="/info-present" component={Present} />
             <Route exact path="/info-schema" component={Schema} />
+            <Route exact path="/info-transport" component={Transport} />
             <Route component={PageNotFound} />
           </Switch>
         </MainPage>

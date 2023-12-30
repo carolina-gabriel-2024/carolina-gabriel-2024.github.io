@@ -22,6 +22,7 @@ const breadCrumbTitles: breadCrumbTitlesInterface = {
   'info-kladsel': 'Information: Klädsel',
   'info-transport': 'Information: Transport',
   'info-schema': 'Information: Schema',
+  'info-present': 'Information: Bröllopsgåvor',
   kontakt: 'Kontakt',
 };
 
@@ -41,7 +42,7 @@ const BreadcrumbsItem: React.VFC<RouteComponentProps> = ({ match }) => {
 
   return (
     <CSpan>
-      <InteractiveLink to={to}>{title || 'Page Not Found'}</InteractiveLink>
+      <InteractiveLink to={to}>{title || 'Något blev fel'}</InteractiveLink>
       {!match.isExact && title && ' / '}
       {title && (
         <Route

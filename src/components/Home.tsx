@@ -27,6 +27,13 @@ const InfoKladselLink: React.VFC = () => (
 const InfoKladsel2Link: React.VFC = () => (
   <InteractiveLink href="/info-kladsel">här</InteractiveLink>
 );
+
+const InfoPresentLink: React.VFC = () => (
+  <InteractiveLink href="/info-present">Bröllopsgåvor</InteractiveLink>
+);
+const InfoPresent2Link: React.VFC = () => (
+  <InteractiveLink href="/info-present">här</InteractiveLink>
+);
 const InfoBoendeLink: React.VFC = () => (
   <InteractiveLink href="/info-boende">Information: Boende</InteractiveLink>
 );
@@ -91,6 +98,10 @@ export const Home: React.VFC = () => {
       </P>
       <P>
         För <InfoKladselLink /> under bröllopet, läs mer <InfoKladsel2Link />.
+      </P>
+      <P>
+        Gällande <InfoPresentLink /> så önskar vi oss stöd till bröllopsresan,
+        läs mer <InfoPresent2Link />.
       </P>
       <P>
         Vi har även sammanställt lite <KontaktLink />.
