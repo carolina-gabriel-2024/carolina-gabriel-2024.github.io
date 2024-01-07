@@ -55,7 +55,7 @@ export const Boende: React.VFC = () => (
     <table>
       <tbody>
         <tr>
-          <TD></TD>
+          <TD>Fullt</TD>
           <TD>4-bäddsrum</TD>
           <TD>2 våningsängar</TD>
           <TD>850kr /natt</TD>
