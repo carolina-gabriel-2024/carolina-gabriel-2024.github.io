@@ -31,9 +31,10 @@ export const Boende: React.VFC = () => (
       fått lite rabatt på rummen och därmed görs boende-bokningar via <Mail />.
       Då det tyvärr inte finns rum för alla ser vi gärna att ni går ihop i
       rummen så att så många som möjligt får plats på säteriet. Vi kommer också
-      ge förtur till dem som planerar stanna fredag-söndag. Det finns även en
-      stor parkering med tillgång till toalett om man vill komma med
-      husbil/husvagn/tält utan extra kostnad.
+      ge förtur till dem som planerar stanna fredag-söndag. Alla rum på säteriet
+      är nu (2024-02-10) uppbokade. Det finns även en stor parkering med
+      tillgång till toalett om man vill komma med husbil/husvagn/tält utan extra
+      kostnad.
     </P>
     <P>
       Det finns även en stor parkering med tillgång till toalett om någon vill
@@ -62,7 +63,7 @@ export const Boende: React.VFC = () => (
           <TD>(1700 fre-sön)</TD>
         </tr>
         <tr>
-          <TD></TD>
+          <TD>Fullt</TD>
           <TD>4-bäddsrum</TD>
           <TD>1 dubbelsäng, 1 våningsäng</TD>
           <TD>850kr /natt</TD>
@@ -84,7 +85,7 @@ export const Boende: React.VFC = () => (
     <table>
       <tbody>
         <tr>
-          <TD></TD>
+          <TD>Fullt</TD>
           <TD>Nybyggt hotellrum 2023</TD>
           <TD>1 dubbelsäng - eget bad/dusch</TD>
           <TD>1250kr /natt</TD>
