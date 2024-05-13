@@ -24,6 +24,7 @@ const breadCrumbTitles: breadCrumbTitlesInterface = {
   'info-schema': 'Information: Schema',
   'info-present': 'Information: Bröllopsgåvor',
   kontakt: 'Kontakt',
+  'info-dryck': 'Middagen - Dryckesinformation',
 };
 
 const CSpan = styled('span', {

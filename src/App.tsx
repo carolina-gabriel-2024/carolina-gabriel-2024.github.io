@@ -15,6 +15,7 @@ import { Schema } from './components/info/Schema';
 import { Talare } from './components/Talare';
 import { Kontakt } from './components/Kontakt';
 import { Vigsel } from './components/Vigsel';
+import { Vin } from './components/Vin';
 import { ExampleTwoDeepComponent } from './components/ExampleTwoDeepComponent';
 import { SitemapLinkGenerator } from './components/SitemapLinkGenerator';
 import { PageNotFound } from './components/PageNotFound';
@@ -177,6 +178,7 @@ export const App: React.VFC = () => {
             <Route exact path="/info-present" component={Present} />
             <Route exact path="/info-schema" component={Schema} />
             <Route exact path="/info-transport" component={Transport} />
+            <Route exact path="/info-dryck" component={Vin} />
             <Route component={PageNotFound} />
           </Switch>
         </MainPage>
