@@ -131,7 +131,7 @@ const SideImages: React.VFC = () => {
   return (
     <ImageContainer>
       {images.map((o) => (
-        <SideImgCard>
+        <SideImgCard key={o.key}>
           {o.iframe ? (
             <SideIframe src={o.key} />
           ) : (

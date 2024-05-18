@@ -32,8 +32,12 @@ export const Schema: React.VFC = () => (
     <P>
       <H3>Söndag </H3>
       För de gäster som bott över på säteriet eller bor i närheten serveras det
-      för dem som vill en brunch innan man far hemåt. Mer info kommer.
+      för dem som vill en brunch innan man far hemåt. De som bor på Säteriet har
+      utcheckning kl 10 så därför siktar vi på att dra igång stekplattorna strax
+      innan 9 på morgonen och kommer kunna ha lite drop-in mellan då och 11.
     </P>
+
+    <P></P>
     <SingleImageCard />
   </div>
 );
