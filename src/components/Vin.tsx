@@ -26,6 +26,11 @@ const VinMust: React.VFC = () => (
     Rudenstams Mousserande Vita vinbärsmust
   </InteractiveLink>
 );
+const Rom: React.VFC = () => (
+  <InteractiveLink href="https://www.bordershop.com/se/sprit/rom/plantation-original-dark-artisanal-rum-40-2104893">
+    plantation original dark artisanal rum
+  </InteractiveLink>
+);
 
 const BarKontakt: React.VFC = () => (
   <InteractiveLink href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
@@ -75,7 +80,16 @@ export const Vin: React.VFC = () => (
     <P>
       <AppleMust />
     </P>
-
+    <P>
+      <H3>Avec</H3>
+      Av erfarenhet slutar en whiskybar med att vi bara kommer ha en massa sprit
+      hemma som man behöver bjuda på! Ikväll håller vi oss till en rom och utgår
+      från att den tar slut. Men det är inte hela världen om vi får dricka upp
+      lite rester i sommar.
+    </P>
+    <P>
+      <Rom />
+    </P>
     <P>
       <H3>Efterfesten</H3>
       När middagen är slut så kommer det finnas gott om alternativ att välja
@@ -97,6 +111,10 @@ export const Vin: React.VFC = () => (
           <tr>
             <td>Öl</td>
             <td>Gott om 3.5or</td>
+          </tr>
+          <tr>
+            <td>Cider</td>
+            <td>Fläder, Passionsfrukt och Äpple</td>
           </tr>
           <tr>
             <td>Vin</td>
