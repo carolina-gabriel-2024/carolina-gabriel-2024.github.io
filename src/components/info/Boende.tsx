@@ -70,7 +70,7 @@ export const Boende: React.VFC = () => (
           <TD>(1700 fre-sön)</TD>
         </tr>
         <tr>
-          <TD>Fullt</TD>
+          <TD>Fullt&nbsp;</TD>
           <TD>2-bäddsrum</TD>
           <TD>1 våningsäng</TD>
           <TD>550kr /natt</TD>
