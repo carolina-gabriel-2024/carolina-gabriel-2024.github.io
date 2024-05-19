@@ -17,6 +17,9 @@ export const Transport: React.VFC = () => (
       luren
     </P>
     <P>
+      Numret till beställningscentralen för Ulricehamn taxi är 0321-53 33 33.
+    </P>
+    <P>
       <H3>Priser Taxi</H3>
       <table>
         <tbody>

@@ -44,10 +44,10 @@ export const Kontakt: React.VFC = () => (
       </tr>
       <tr>
         <TD>
-          <H3>Taxin</H3>
+          <H3>Beställning av Taxi</H3>
         </TD>
-        <TD> ...mer info kommer... </TD>
-        <TD></TD>
+        <TD>Ring 0321-53 33 33</TD>
+        <TD>Försök att vara fler i samma bil</TD>
       </tr>
     </table>
     <SingleImageCard />
