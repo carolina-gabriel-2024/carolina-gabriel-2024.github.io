@@ -13,7 +13,7 @@ export const Schema: React.VFC = () => (
       kl 14. Annars är det fritt fram att komma när det passar från 13. Grillen
       kommer att tändas vid 18.
     </P>
-    <P>Med andra ord: Grill finns att ta av 19:00-21:00 på söndag.</P>
+    <P>Med andra ord: Grill finns att ta av 19:00-21:00 på fredag.</P>
 
     <P>
       <H3>Lördag </H3>
