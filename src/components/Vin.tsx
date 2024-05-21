@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { InteractiveLink } from '../ui/InteractiveLink';
-import { P, H2, H3 } from '../ui/Paragraph';
+import { P, H2, H3, Table, TD } from '../ui/Paragraph';
 import { styled } from '../stitches.config';
 import { SingleImageCard } from '../ui/Image';
 const VitVin: React.VFC = () => (
@@ -94,54 +94,58 @@ export const Vin: React.VFC = () => (
       <H3>Efterfesten</H3>
       När middagen är slut så kommer det finnas gott om alternativ att välja
       från om du är törstig.
-      <table>
+      <Table>
         <tbody>
           <tr>
-            <td>Drink</td>
-            <td>4 sorters Gin & Tonic</td>
+            <TD>Drink</TD>
+            <TD>4 sorters Gin & Tonic</TD>
           </tr>
           <tr>
-            <td>Drink</td>
-            <td>Aperol Spritz</td>
+            <TD>Drink</TD>
+            <TD>Aperol Spritz</TD>
           </tr>
           <tr>
-            <td>Öl</td>
-            <td>Lager eller IPA</td>
+            <TD>Öl</TD>
+            <TD>Lager eller IPA</TD>
           </tr>
           <tr>
-            <td>Öl</td>
-            <td>Gott om 3.5or</td>
+            <TD>Lång</TD>
+            <TD>Gott om 3.5or</TD>
           </tr>
           <tr>
-            <td>Cider</td>
-            <td>Fläder, Passionsfrukt och Äpple</td>
+            <TD>Cider</TD>
+            <TD>Fläder, Passionsfrukt och Äpple</TD>
           </tr>
           <tr>
-            <td>Vin</td>
-            <td>Rosévinet från middagen</td>
+            <TD>Vin</TD>
+            <TD>Rosévinet från middagen</TD>
           </tr>
           <tr>
-            <td>Vin</td>
-            <td>Rieslingen från middagen</td>
+            <TD>Vin</TD>
+            <TD>Rieslingen från middagen</TD>
           </tr>
           <tr>
-            <td>Bubbel</td>
-            <td>Mingelbubblet</td>
+            <TD>Vin</TD>
+            <TD>Rött vin - För: Varför inte?</TD>
           </tr>
           <tr>
-            <td>Alkoholfritt&nbsp;&nbsp;</td>
-            <td> Musten från middagen</td>
+            <TD>Bubbel</TD>
+            <TD>Mingelbubblet</TD>
           </tr>
           <tr>
-            <td>Alkoholfritt</td>
-            <td> Cola Zero</td>
+            <TD>Alkoholfri Must</TD>
+            <TD>Musten från middagen</TD>
           </tr>
           <tr>
-            <td>Alkoholfritt</td>
-            <td> Carlsberg Nordic</td>
+            <TD>Läsk</TD>
+            <TD>Cola Zero, Trocazero, Trocazero Geléhallon</TD>
+          </tr>
+          <tr>
+            <TD>Alkoholfri öl</TD>
+            <TD>Carlsberg Nordic</TD>
           </tr>
         </tbody>
-      </table>
+      </Table>
     </P>
     <P>
       <BarKontakt />

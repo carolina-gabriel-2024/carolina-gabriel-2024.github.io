@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { P, H2, H3, TD } from '../../ui/Paragraph';
+import { P, H2, H3, Table, TD } from '../../ui/Paragraph';
 import { styled } from '../../stitches.config';
 import { InteractiveLink } from '../../ui/InteractiveLink';
 import { SingleImageCard } from '../../ui/Image';
@@ -53,7 +53,7 @@ export const Boende: React.VFC = () => (
       Man kan hyra lakan/handdukar för 139kr/enhet eller så kan man ta med sig
       egna. Var snälla om meddela detta när ni hör av er om boende.
     </P>
-    <table>
+    <Table>
       <tbody>
         <tr>
           <TD>Fullt</TD>
@@ -77,12 +77,12 @@ export const Boende: React.VFC = () => (
           <TD>(1100 fre-sön)</TD>
         </tr>
       </tbody>
-    </table>
+    </Table>
     <P></P>
     <H3>Rum Hotell:</H3>
 
     <P></P>
-    <table>
+    <Table>
       <tbody>
         <tr>
           <TD>Fullt</TD>
@@ -92,7 +92,7 @@ export const Boende: React.VFC = () => (
           <TD>(2500 fre-sön)</TD>
         </tr>
       </tbody>
-    </table>
+    </Table>
 
     <P></P>
     <H3>Övriga:</H3>

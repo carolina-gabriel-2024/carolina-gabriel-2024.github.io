@@ -16,7 +16,19 @@ export const H3 = styled('h3', {
   fontWeight: 'bold',
 });
 
+export const Table = styled('table', {
+  borderSpacing: '0px',
+});
+
 export const TD = styled('td', {
   marginRight: '15px',
   paddingRight: '15px',
+  minWidth: '120px',
+  border: '1px solid #eee',
+});
+
+export const TH = styled('th', {
+  marginRight: '15px',
+  paddingRight: '15px',
+  fontWeight: 'bold',
 });

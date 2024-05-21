@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { P, H2, H3, TD } from '../../ui/Paragraph';
+import { P, H2, H3, Table, TD } from '../../ui/Paragraph';
 import { styled } from '../../stitches.config';
 import { SingleImageCard } from '../../ui/Image';
 export const Transport: React.VFC = () => (
@@ -21,7 +21,7 @@ export const Transport: React.VFC = () => (
     </P>
     <P>
       <H3>Priser Taxi</H3>
-      <table>
+      <Table>
         <tbody>
           <tr>
             <TD>Bil</TD>
@@ -34,7 +34,7 @@ export const Transport: React.VFC = () => (
             <TD>950kr</TD>
           </tr>
         </tbody>
-      </table>
+      </Table>
     </P>
     <P>
       <H3>Praxis</H3>
