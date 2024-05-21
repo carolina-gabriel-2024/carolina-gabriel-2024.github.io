@@ -8,10 +8,8 @@ const LinkContainer = styled('span', {
   margin: '8px 0',
 });
 
-const RepoReadmeLink: React.VFC = () => (
-  <InteractiveLink href="https://github.com/rafgraph/spa-github-pages#readme">
-    repo readme
-  </InteractiveLink>
+const Schema: React.VFC = () => (
+  <InteractiveLink href="info-schema">schemat</InteractiveLink>
 );
 
 export const Vigsel: React.VFC = () => (
@@ -27,7 +25,9 @@ export const Vigsel: React.VFC = () => (
       med skor för att kunna korsa en äng. Om det mot förmodan skulle regna så
       finns det ett antal backup-planer.
     </P>
-    <P>Mer detaljer kommer är det närmar sig!</P>
+    <P>
+      För mer detaljer se <Schema />.
+    </P>
     <SingleImageCard />
   </div>
 );
