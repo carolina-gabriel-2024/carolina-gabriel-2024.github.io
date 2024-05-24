@@ -73,7 +73,7 @@ export const Schema: React.VFC = () => (
           </TD>
         </tr>
         <tr>
-          <TD>18:30-22:30</TD>
+          <TD>18:00-22:30</TD>
           <TD>Middag</TD>
           <TD>Årås Kvarn, vån 3</TD>
           <TD>Hör med våra Toastmasters Julia & Philip om du har frågor.</TD>
